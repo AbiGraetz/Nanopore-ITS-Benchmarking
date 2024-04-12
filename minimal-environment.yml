@@ -1,0 +1,8 @@
+name: inhouse-its-qc
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bioconductor-dada2=1.30.0=r43hc0ef7c4_0
+  - nanoplot=1.42.0=pyhdfd78af_0
