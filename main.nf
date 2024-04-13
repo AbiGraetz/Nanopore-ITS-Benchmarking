@@ -18,7 +18,7 @@ def removeFileEndings(file, String extension, String... rest) {
 }
 
 workflow {
-  ch_raw_reads = Channel.fromPath('$params.input/Fastq/*.fq.gz', checkIfExists: true)
+  ch_raw_reads = Channel.fromPath("$params.input/Fastq/*.fq.gz", checkIfExists: true)
 
   ch_reads = ch_raw_reads
     .map{ fastq -> 
