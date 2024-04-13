@@ -33,7 +33,7 @@ process nanoplot {
   publishDir "${params.outdir}/QC/${meta.stage_dir}/${meta.id}/nanoplot", mode: 'copy'
 
   input:
-      tuple val(meta), path(ontfiles, name: "*.fastq.gz")
+      tuple val(meta), path(ontfiles)
 
   output:
       tuple val(meta), path("*.html")                , emit: html

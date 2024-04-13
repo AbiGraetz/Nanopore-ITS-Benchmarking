@@ -4,5 +4,5 @@ channels:
   - bioconda
   - defaults
 dependencies:
-  - bioconductor-dada2=1.30.0=r43hc0ef7c4_0
-  - nanoplot=1.42.0=pyhdfd78af_0
+  - bioconda::bioconductor-dada2=1.30.0=r43hc0ef7c4_0
+  - bioconda::nanoplot=1.42.0=pyhdfd78af_0
