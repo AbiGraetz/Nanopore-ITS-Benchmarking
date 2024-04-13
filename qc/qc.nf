@@ -25,6 +25,7 @@ process plotQualityProfile {
 
 process nanoplot {
   tag "$meta.id"
+  label 'process_medium'
 
   container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
       'https://depot.galaxyproject.org/singularity/nanoplot:1.41.6--pyhdfd78af_0' :
