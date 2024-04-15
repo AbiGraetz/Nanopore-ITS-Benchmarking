@@ -1,50 +1,27 @@
 #!/usr/bin/env bash
 qc_dir=${1:-"../output/QC"}
-# out_dir=${2:-"../docs"}
 
 main() {
     if [ ! -d "$qc_dir" ]; then
         echo "directory $qc_dir not found" 1>&2
-        exit -1
+        exit 1
     fi
 
-    declare -A stages=( ["raw_reads"]="Raw reads" ["porechop"]="Porechop" \
-        ["Qmin15"]="Q15" ["Qmin17"]="Q17"\
-        ["Qmin20"]="Q20")
+    declare -A stages=( ["raw_reads"]="Raw reads" \
+        ["porechop"]="Porechop (adapters, barcodes and primers)" \
+        ["Qmin15"]="Filtering min Q15" ["Qmin17"]="Filtering min Q17"\
+        ["Qmin20"]="Filtering min Q20")
     stage_order=(raw_reads porechop Qmin15 Qmin17 Qmin20)
     
     for stage in "${stage_order[@]}"; do
-        write_plots_and_stats_for_all_samples "$stage" > "$stage.md"
+#        write_plots_and_stats_for_all_samples "$stage" > "$stage.md"
 
         echo "# ${stages[$stage]}"
         write_plots_for_sample "$qc_dir/$stage" "all"
         write_stats_for_sample "$qc_dir/$stage/all"
-        echo "[Sample details]($stage.md)"
+#        echo "[Sample details]($stage.md)"
         echo ""
     done
-
-    # write_plots_and_stats_for_all_samples raw_reads > "raw_reads.md"
-
-    # echo "# Raw reads"
-    # write_plots_for_sample "$qc_dir/raw_reads" "all"
-    # write_stats_for_sample "$qc_dir/raw_reads/all"
-    # echo "[Sample details](raw_reads.md)"
-
-    # echo "# Porechop"
-    # write_plots_for_sample "$qc_dir/porechop" "all"
-    # write_stats_for_sample "$qc_dir/porechop/all"
-
-    # echo "# Q15"
-    # write_plots_for_sample "$qc_dir/Qmin15" "all"
-    # write_stats_for_sample "$qc_dir/Qmin15/all"
-
-    # echo "# Q17"
-    # write_plots_for_sample "$qc_dir/Qmin17" "all"
-    # write_stats_for_sample "$qc_dir/Qmin17/all"
-
-    # echo "# Q20"
-    # write_plots_for_sample "$qc_dir/Qmin20" "all"
-    # write_stats_for_sample "$qc_dir/Qmin20/all"
 }
 
 write_plots_for_sample () {
@@ -54,7 +31,7 @@ write_plots_for_sample () {
 
     echo "| Avg. Read Quality vs Length | Base Quality by Position |"
     echo "| -- | -- |"
-    echo "<img src=\"$sample_dir/nanoplot/LengthvsQualityScatterPlot_dot.png\"  width=\"400\" /> | <img src=\"$sample_dir/qualityProfile/$sample.png\" width=\"400\"  /> |"
+    echo "| <img src=\"$sample_dir/nanoplot/LengthvsQualityScatterPlot_dot.png\"  width=\"500\" /> | <img src=\"$sample_dir/qualityProfile/$sample.png\" width=\"500\"  /> |"
     echo ""
 }
 
@@ -64,27 +41,15 @@ write_stats_for_sample() {
     echo "| NanoStats | |"
     echo "| -- | -- |"
 
-    # local stats=$(grep -E 'number_of_reads|number_of_bases|median_read_length|mean_read_length|read_length_stdev|mean_qual|median_qual|Reads >' \
-    #     "$sample_dir/nanoplot/NanoStats.txt"
-    # )
-    # echo "$stats" | while read stat; do
-    #     echo $(echo "$stat" | sed 's/\t/ | /')
-    # done
-    # echo "($(awk -vRS="\n" -vFS="\t" -vORS=" " 'NR> 1 {print "[\""$1"\"]=\""$2"\"" }' "$sample_dir/nanoplot/NanoStats.txt"))"
     declare -A stats_dict="($(awk -vRS="\n" -vFS="\t" -vORS=" " 'NR> 1 {print "[\""$1"\"]=\""$2"\"" }' "$sample_dir/nanoplot/NanoStats.txt"))"
-    
-    reads_gt_metrics="$(echo "${!stats_dict[@]}" | grep 'Reads >')"
-    # echo "$reads_gt_metrics"
 
     metrics=(number_of_reads number_of_bases median_read_length mean_read_length \
         read_length_stdev mean_qual median_qual "Reads >Q5:" "Reads >Q7:" "Reads >Q10:" "Reads >Q12:" "Reads >Q15:")
     for metric in "${metrics[@]}"
     do
-        echo "$metric | ${stats_dict[$metric]}"
+        echo "| $metric | ${stats_dict[$metric]} |"
     done
     echo ""
-
-    return $stats_dict
 }
 
 write_plots_and_stats_for_all_samples() {
