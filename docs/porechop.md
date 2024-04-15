@@ -1,7 +1,8 @@
-# 20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_flavum.BC42
+# porechop (sample details)
+## 20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_flavum.BC42
 | Avg. Read Quality vs Length | Base Quality by Position |
 | -- | -- |
-<img src="../output/subset/QC/porechop/20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_flavum.BC42/nanoplot/LengthvsQualityScatterPlot_dot.png"  width="400" /> | <img src="../output/subset/QC/porechop/20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_flavum.BC42/qualityProfile/20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_flavum.BC42.png" width="400"  /> |
+<img src="../output/subset/QC//porechop//20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_flavum.BC42/nanoplot/LengthvsQualityScatterPlot_dot.png"  width="400" /> | <img src="../output/subset/QC//porechop//20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_flavum.BC42/qualityProfile/20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_flavum.BC42.png" width="400"  /> |
 
 | NanoStats | |
 | -- | -- |
@@ -18,10 +19,10 @@ Reads >Q10: | 4569 (91.2%) 7.7Mb
 Reads >Q12: | 4223 (84.3%) 7.1Mb
 Reads >Q15: | 3321 (66.3%) 5.6Mb
 
-# 20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_fumigatus.BC43
+## 20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_fumigatus.BC43
 | Avg. Read Quality vs Length | Base Quality by Position |
 | -- | -- |
-<img src="../output/subset/QC/porechop/20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_fumigatus.BC43/nanoplot/LengthvsQualityScatterPlot_dot.png"  width="400" /> | <img src="../output/subset/QC/porechop/20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_fumigatus.BC43/qualityProfile/20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_fumigatus.BC43.png" width="400"  /> |
+<img src="../output/subset/QC//porechop//20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_fumigatus.BC43/nanoplot/LengthvsQualityScatterPlot_dot.png"  width="400" /> | <img src="../output/subset/QC//porechop//20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_fumigatus.BC43/qualityProfile/20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_fumigatus.BC43.png" width="400"  /> |
 
 | NanoStats | |
 | -- | -- |
@@ -38,10 +39,10 @@ Reads >Q10: | 4614 (92.0%) 7.1Mb
 Reads >Q12: | 4287 (85.5%) 6.6Mb
 Reads >Q15: | 3437 (68.6%) 5.3Mb
 
-# all
+## all
 | Avg. Read Quality vs Length | Base Quality by Position |
 | -- | -- |
-<img src="../output/subset/QC/porechop/all/nanoplot/LengthvsQualityScatterPlot_dot.png"  width="400" /> | <img src="../output/subset/QC/porechop/all/qualityProfile/all.png" width="400"  /> |
+<img src="../output/subset/QC//porechop//all/nanoplot/LengthvsQualityScatterPlot_dot.png"  width="400" /> | <img src="../output/subset/QC//porechop//all/qualityProfile/all.png" width="400"  /> |
 
 | NanoStats | |
 | -- | -- |
