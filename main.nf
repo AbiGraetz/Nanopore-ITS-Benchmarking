@@ -1,7 +1,6 @@
 #!/usr/bin/env nextflow
 params.input = '$baseDir/data/'
 params.outdir = 'output'
-nextflow.enable.dsl = 2
 
 include {
   plotQuality;
@@ -45,19 +44,19 @@ workflow {
   plotQuality_pc('porechop', porechop_out.reads)
 
   q15 = chopper_15(
-    [minQualityPhred: 15, minLength: 100, maxLength: 6000],
+    params.readQuality,
     porechop_out.reads)
   
   plotQuality2('Qmin15', q15.reads)
 
   q17 = chopper_17(
-    [minQualityPhred: 17, minLength: 100, maxLength: 6000],
+    [minQualityPhred: 17, minLength: params.readQuality.minLength, maxLength: params.readQuality.maxLength],
     porechop_out.reads)
   
   plotQuality3('Qmin17', q17.reads)
 
   q20 = chopper_20(
-    [minQualityPhred: 20, minLength: 100, maxLength: 6000],
+    [minQualityPhred: 20, minLength: params.readQuality.minLength, maxLength: params.readQuality.maxLength],
     porechop_out.reads)
   
   plotQuality4('Qmin20', q20.reads)
