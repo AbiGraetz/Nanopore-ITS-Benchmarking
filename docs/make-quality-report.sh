@@ -14,12 +14,13 @@ main() {
     stage_order=(raw_reads porechop Qmin15 Qmin17 Qmin20)
     
     for stage in "${stage_order[@]}"; do
-#        write_plots_and_stats_for_all_samples "$stage" > "$stage.md"
+        mkdir -p ./sample
+        write_stats_table_for_all_samples "$stage" > "./sample/$stage.md"
 
         echo "# ${stages[$stage]}"
         write_plots_for_sample "$qc_dir/$stage" "all"
         write_stats_for_sample "$qc_dir/$stage/all"
-#        echo "[Sample details]($stage.md)"
+        echo "[Sample details](./sample/$stage.md)"
         echo ""
     done
 }
@@ -52,12 +53,33 @@ write_stats_for_sample() {
     echo ""
 }
 
+write_stats_table_for_all_samples() {
+    local stage_name=${1:-raw_reads}
+    local samples=$(ls -1 "$qc_dir/$stage_name" | sort)
+
+    echo "# $stage_name (sample details)"
+
+    metrics=(number_of_reads number_of_bases median_read_length mean_read_length \
+            read_length_stdev mean_qual median_qual "Reads >Q5:" "Reads >Q7:" "Reads >Q10:" "Reads >Q12:" "Reads >Q15:")
+
+    echo "| Sample |$(IFS='|' ; echo "${metrics[*]}")|"
+    local len=${#metrics[@]}
+    echo "|$(for ((i=0;i<=len;i++));do printf " -- |"; done)"
+
+
+    echo "$samples" | while read -r sample; do
+        sample_dir="$qc_dir/$stage_name/$sample"
+        declare -A stats_dict="($(awk -vRS="\n" -vFS="\t" -vORS=" " 'NR> 1 {print "[\""$1"\"]=\""$2"\"" }' "$sample_dir/nanoplot/NanoStats.txt"))"
+        echo "| $sample | $(for metric in "${metrics[@]}";do printf '%s | ' "${stats_dict[$metric]}"; done)"
+    done
+}
+
 write_plots_and_stats_for_all_samples() {
     local stage_name=${1:-raw_reads}
     local samples=$(ls -1 "$qc_dir/$stage_name" | sort)
     echo "# $stage_name (sample details)"
 
-    echo "$samples" | while read sample; do
+    echo "$samples" | while read -r sample; do
         echo "## $sample"
 
         write_plots_for_sample "$qc_dir/$stage_name/" "$sample"

@@ -18,6 +18,7 @@
 | Reads >Q12: | 2547433 (84.3%) 5200.4Mb |
 | Reads >Q15: | 2062786 (68.3%) 4238.9Mb |
 
+[Sample details](./sample/raw_reads.md)
 
 # Porechop (adapters, barcodes and primers)
 | Avg. Read Quality vs Length | Base Quality by Position |
@@ -39,6 +40,7 @@
 | Reads >Q12: | 2575165 (84.5%) 5086.3Mb |
 | Reads >Q15: | 2091803 (68.6%) 4165.6Mb |
 
+[Sample details](./sample/porechop.md)
 
 # Filtering min Q15
 | Avg. Read Quality vs Length | Base Quality by Position |
@@ -60,6 +62,7 @@
 | Reads >Q12: | 2091251 (100.0%) 4164.6Mb |
 | Reads >Q15: | 2091251 (100.0%) 4164.6Mb |
 
+[Sample details](./sample/Qmin15.md)
 
 # Filtering min Q17
 | Avg. Read Quality vs Length | Base Quality by Position |
@@ -81,6 +84,7 @@
 | Reads >Q12: | 1451023 (100.0%) 2880.7Mb |
 | Reads >Q15: | 1451023 (100.0%) 2880.7Mb |
 
+[Sample details](./sample/Qmin17.md)
 
 # Filtering min Q20
 | Avg. Read Quality vs Length | Base Quality by Position |
@@ -102,4 +106,5 @@
 | Reads >Q12: | 324237 (100.0%) 567.0Mb |
 | Reads >Q15: | 324237 (100.0%) 567.0Mb |
 
+[Sample details](./sample/Qmin20.md)
 
