@@ -44,7 +44,7 @@ nextflow run main.nf --input 'data/' --outdir 'output/' -p singularity
 
 ### Multithreading
 The ability to use multiple cpus for compute intensive processes can be customised using the following configuration files:
-- [conf/envs/cluster.config](conf/envs/cluster.config) - when running on my laptop (2 cpus for intensive tasks)
+- [conf/envs/local.config](conf/envs/local.config) - when running on my laptop (2 cpus for intensive tasks)
 - [conf/envs/cluster.config](conf/envs/cluster.config) - when running on my cluster (8 cpus for intensive tasks)
 
 To run the pipeline with one of these files use the `-c` flag:
