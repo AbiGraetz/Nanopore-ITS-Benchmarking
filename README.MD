@@ -22,24 +22,26 @@ When running with docker or singularity, nextflow will download dependencies aut
     ```
 2. Run the pipeline
     ```shell
-    nextflow run main.nf --input 'data/' --outdir 'output/'
+    nextflow run main.nf --input 'data/*.fq.gz' --outdir 'output/'
     ```
-    The `--input` parameter indicates where the fastq files to analyze are located. 
-    The pipeline is will take all files matching `data/Fastq/*.fq.gz`
+    The `--input` parameter indicates where the fastq files are located. 
+
+    You can use a glob expression ('*') to match multiple files.
+    **Be sure to use quotes for your input files.** (`--input 'data/*.fq.gz'` instead of `--input data/*.fq.gz`)
 
     The `--outdir` parameter indicates where the output files should be placed
 
     The pipeline with run with docker by default
 3. To resume a pipeline run that has stopped (or failed), use the `-resume` flag
     ```shell
-    nextflow run main.nf --input 'data/' --outdir 'output/' -resume
+    nextflow run main.nf --input 'data/*.fq.gz' --outdir 'output/' -resume
     ```
    
 ## Configuring the pipeline
 ### Run with singularity
 Use the `singularity` profile using the `-p` flag.
 ```shell
-nextflow run main.nf --input 'data/' --outdir 'output/' -p singularity
+nextflow run main.nf --input 'data/*.fq.gz' --outdir 'output/' -profile singularity
 ```
 
 ### Multithreading
@@ -49,7 +51,7 @@ The ability to use multiple cpus for compute intensive processes can be customis
 
 To run the pipeline with one of these files use the `-c` flag:
 ```shell
-nextflow run main.nf --input 'data/' --outdir 'output/' -c conf/envs/local.config
+nextflow run main.nf --input 'data/*.fq.gz' --outdir 'output/' -c conf/envs/local.config
 ```
 
 ### Primer sequences
