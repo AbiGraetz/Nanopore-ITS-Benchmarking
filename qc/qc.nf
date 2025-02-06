@@ -1,5 +1,6 @@
 process plotQualityProfile {
   tag "$meta.id"
+  label 'process_medium'
   container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
           'https://depot.galaxyproject.org/singularity/bioconductor-dada2:1.30.0--r43hf17093f_0' :
           'biocontainers/bioconductor-dada2:1.30.0--r43hf17093f_0' }"
