@@ -1,0 +1,26 @@
+---
+title: "ITS Benchmarking - QC Step Figures"
+format: html
+---
+
+```{dot}
+digraph {
+  graph [layout = dot, rankdir = LR, fontsize=30]
+  node [shape = rectangle, peripheries=2, fontsize="20"]
+    guppy [label = "Basecalling and demultiplexing\n(guppy v6.4.2)"]
+    rec1 [label = "Adapter trimming\n(porechop v0.2.4)"]
+    rec2 [label = "Primer trimming\n(porechop v0.2.4)"]
+    rec3 [label = "Quality filtering &#8805; Q15\n(chopper v0.7.0)"]
+    rec4 [label = "Quality filtering &#8805; Q17\n(chopper v0.7.0)"]
+
+    node [shape = plaintext, peripheries=0]
+    rec0 [label = "Raw MinION data\n(fast5)"]
+    rec6 [label = "Quality filtered reads"]
+    rec7 [label = "Quality filtered reads"]
+
+    # edge definitions with the node IDs
+    edge [ fontsize="20"]
+    rec0 -> guppy -> rec1 -> rec2 -> rec3 -> rec6
+    rec2 -> rec4 -> rec7
+}
+```
