@@ -1,0 +1,8 @@
+/path/to/json/file/aodp/
+/path/to/json/file/minimap2/
+/path/to/json/file/kraken2/
+/path/to/json/file/dnabarcoder/
+/path/to/json/file/emu/
+/path/to/json/file/vuthuyduong/
+/path/to/json/file/mycoAI/bert/
+/path/to/json/file/mycoAI/cnn/
