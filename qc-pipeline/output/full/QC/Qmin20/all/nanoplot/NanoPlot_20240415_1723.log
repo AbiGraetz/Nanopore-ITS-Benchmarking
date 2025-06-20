@@ -1,0 +1,216 @@
+2024-04-15 17:23:19,946 NanoPlot 1.41.6 started with arguments Namespace(threads=2, verbose=False, store=False, raw=False, huge=False, outdir='.', no_static=False, prefix='', tsv_stats=True, info_in_report=False, maxlength=None, minlength=None, drop_outliers=False, downsample=None, loglength=False, percentqual=False, alength=False, minqual=None, runtime_until=None, readtype='1D', barcoded=False, no_supplementary=False, color='#4CB391', colormap='Greens', format=['png'], plots=['kde', 'dot'], legacy=None, listcolors=False, listcolormaps=False, no_N50=False, N50=False, title=None, font_scale=1, dpi=100, hide_stats=False, fastq=['20221208.Rep1_Run2_ITS_Fungal_database.Cryptococcus_albidus.BC58-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Galactomyces_geotrichum.BC64-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Meyerozyma_guillermondii.BC69-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Puccinia_triticina.BC26-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Pichia_membranifacien.BC73-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Sclerotinia_sclerotiorum.BC30-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Cryptococcus_gattil_VG_I.BC59-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Cryptococcus_neoformans_VNI.BC61-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Leptosphaeria_maculans.BC29-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_fumigatus.BC43-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Botrytis_fabae.BC32-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Pyrenophora_tritici-repentis.BC37-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Austropuccinia_psidii.BC28-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Austropuccinia_psidii.BC36-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Entoleuca_sp_CCL052.BC85-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Asteroma_sp_CCL068.BC87-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Eutypa_lata.BC39-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Cryptococcus_neoformans_VN_IIII.BC62-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.candida_boletica.BC48-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Candida_orthopsilosis.BC54-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Diplodia_seriata.BC40-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Blastobotrys_adeninivorans.BC45-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Puccinia_graminis.BC27-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Sporisorium_scitamineum.BC34-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Zymoseptoria_tritici.BC33-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Diaporthe_sp_CCL067.BC83-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Cryptococcus_gattii_VG_III.BC60-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Kodamaea_ohmeri.BC68-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Pichia_kudriavzevii.BC72-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Trichomonascus_ciferrii.BC77-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Candida_metapsilosis.BC53-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Asteroma_sp_CCL060.BC88-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Yamadazyma_mexicana.BC80-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Candid_zeylanoides.BC57-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Scedosporium_boydii.BC76-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Candida_caryicola.BC49-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Kluyveromyces_marxianus.BC67-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Candida_albicans.BC47-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Botrytis_cinerea.BC31-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Erysiphe_necator.BC35-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Candida_tropicalis.BC56-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_flavum.BC42-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Scedosporium_auranticum.BC75-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Cortinarius_globuliformis_CM4.BC86-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Candida_glabrata.BC52-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Yamadazyma_scolyti.BC81-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Cryptovalsa_ampelina.BC38-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Fusarium_pseudograminearum.BC41-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Quambalaria_cyanescens_CCL055.BC84-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Puccinia_striiformis_var_tritici.BC25-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Nakazawaea_ernobil.BC70-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_niger.BC44-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Geotrichum_candidum.BC65-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Trichosporon_asahil.BC78-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Yarrowia_lipolytica.BC82-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Candida_dublinsiensis.BC51-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Wickerhamomyces_anomalus.BC79-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Candida_catenulata.BC50-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Candida_parapsilosis.BC55-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Penicillium_chrysogenum.BC71-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Fusarium_proliferatum.BC63-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Blastobotrys_proliferans.BC46-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Rhodotorula_mucilaginosa.BC74-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Kluyveromyces_lactis.BC66-trim-primer.filtered.fastq.gz', '20221208.Rep1_Run2_ITS_Fungal_database.Tuber_brumale.BC89-trim-primer.filtered.fastq.gz'], fasta=None, fastq_rich=None, fastq_minimal=None, summary=None, bam=None, ubam=None, cram=None, pickle=None, feather=None, path='./')
+2024-04-15 17:23:19,946 Python version is: 3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:40:32) [GCC 12.3.0]
+2024-04-15 17:23:20,005 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:20,005 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:20,005 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Cryptococcus_albidus.BC58-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:20,005 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Galactomyces_geotrichum.BC64-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:20,064 Reduced DataFrame memory usage from 0.000274658203125Mb to 0.000274658203125Mb
+2024-04-15 17:23:20,064 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:20,064 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Meyerozyma_guillermondii.BC69-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:20,227 Reduced DataFrame memory usage from 0.0574951171875Mb to 0.0574951171875Mb
+2024-04-15 17:23:20,228 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:20,228 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Puccinia_triticina.BC26-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:20,230 Reduced DataFrame memory usage from 0.02288818359375Mb to 0.02288818359375Mb
+2024-04-15 17:23:20,231 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:20,231 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Pichia_membranifacien.BC73-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:20,632 Reduced DataFrame memory usage from 0.0387725830078125Mb to 0.0387725830078125Mb
+2024-04-15 17:23:20,633 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:20,633 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Sclerotinia_sclerotiorum.BC30-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:20,982 Reduced DataFrame memory usage from 0.050079345703125Mb to 0.050079345703125Mb
+2024-04-15 17:23:20,983 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:20,983 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Cryptococcus_gattil_VG_I.BC59-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:21,451 Reduced DataFrame memory usage from 0.0489044189453125Mb to 0.0489044189453125Mb
+2024-04-15 17:23:21,452 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:21,452 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Cryptococcus_neoformans_VNI.BC61-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:21,839 Reduced DataFrame memory usage from 0.027984619140625Mb to 0.027984619140625Mb
+2024-04-15 17:23:21,839 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:21,839 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Leptosphaeria_maculans.BC29-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:21,860 Reduced DataFrame memory usage from 0.066802978515625Mb to 0.066802978515625Mb
+2024-04-15 17:23:21,861 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:21,861 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_fumigatus.BC43-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:22,656 Reduced DataFrame memory usage from 0.0870819091796875Mb to 0.0870819091796875Mb
+2024-04-15 17:23:22,657 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:22,657 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Botrytis_fabae.BC32-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:22,826 Reduced DataFrame memory usage from 0.0650787353515625Mb to 0.0650787353515625Mb
+2024-04-15 17:23:22,827 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:22,827 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Pyrenophora_tritici-repentis.BC37-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:23,277 Reduced DataFrame memory usage from 0.03863525390625Mb to 0.03863525390625Mb
+2024-04-15 17:23:23,279 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:23,279 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Austropuccinia_psidii.BC28-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:23,909 Reduced DataFrame memory usage from 0.0702972412109375Mb to 0.0702972412109375Mb
+2024-04-15 17:23:23,910 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:23,910 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Austropuccinia_psidii.BC36-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:24,741 Reduced DataFrame memory usage from 0.08319091796875Mb to 0.08319091796875Mb
+2024-04-15 17:23:24,742 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:24,742 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Entoleuca_sp_CCL052.BC85-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:25,126 Reduced DataFrame memory usage from 0.0338287353515625Mb to 0.0338287353515625Mb
+2024-04-15 17:23:25,127 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:25,127 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Asteroma_sp_CCL068.BC87-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:25,560 Reduced DataFrame memory usage from 0.079620361328125Mb to 0.079620361328125Mb
+2024-04-15 17:23:25,560 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:25,561 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Eutypa_lata.BC39-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:25,848 Reduced DataFrame memory usage from 0.04437255859375Mb to 0.04437255859375Mb
+2024-04-15 17:23:25,848 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:25,848 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Cryptococcus_neoformans_VN_IIII.BC62-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:25,902 Reduced DataFrame memory usage from 0.018218994140625Mb to 0.018218994140625Mb
+2024-04-15 17:23:25,903 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:25,903 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.candida_boletica.BC48-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:26,846 Reduced DataFrame memory usage from 0.0690155029296875Mb to 0.0690155029296875Mb
+2024-04-15 17:23:26,847 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:26,847 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Candida_orthopsilosis.BC54-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:27,347 Reduced DataFrame memory usage from 0.0999908447265625Mb to 0.0999908447265625Mb
+2024-04-15 17:23:27,348 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:27,348 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Diplodia_seriata.BC40-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:27,836 Reduced DataFrame memory usage from 0.0328826904296875Mb to 0.0328826904296875Mb
+2024-04-15 17:23:27,836 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:27,836 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Blastobotrys_adeninivorans.BC45-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:27,984 Reduced DataFrame memory usage from 0.07843017578125Mb to 0.07843017578125Mb
+2024-04-15 17:23:27,985 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:27,985 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Puccinia_graminis.BC27-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:28,932 Reduced DataFrame memory usage from 0.0577545166015625Mb to 0.0577545166015625Mb
+2024-04-15 17:23:28,932 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:28,932 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Sporisorium_scitamineum.BC34-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:29,090 Reduced DataFrame memory usage from 0.0833282470703125Mb to 0.0833282470703125Mb
+2024-04-15 17:23:29,091 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:29,091 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Zymoseptoria_tritici.BC33-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:29,547 Reduced DataFrame memory usage from 0.023193359375Mb to 0.023193359375Mb
+2024-04-15 17:23:29,548 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:29,548 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Diaporthe_sp_CCL067.BC83-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:29,850 Reduced DataFrame memory usage from 0.0466766357421875Mb to 0.0466766357421875Mb
+2024-04-15 17:23:29,850 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:29,851 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Cryptococcus_gattii_VG_III.BC60-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:30,193 Reduced DataFrame memory usage from 0.0350799560546875Mb to 0.0350799560546875Mb
+2024-04-15 17:23:30,194 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:30,194 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Kodamaea_ohmeri.BC68-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:30,258 Reduced DataFrame memory usage from 0.0291290283203125Mb to 0.0291290283203125Mb
+2024-04-15 17:23:30,258 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:30,259 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Pichia_kudriavzevii.BC72-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:31,263 Reduced DataFrame memory usage from 0.0689849853515625Mb to 0.0689849853515625Mb
+2024-04-15 17:23:31,264 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:31,264 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Trichomonascus_ciferrii.BC77-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:31,580 Reduced DataFrame memory usage from 0.11181640625Mb to 0.11181640625Mb
+2024-04-15 17:23:31,581 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:31,581 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Candida_metapsilosis.BC53-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:32,062 Reduced DataFrame memory usage from 0.05657958984375Mb to 0.05657958984375Mb
+2024-04-15 17:23:32,063 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:32,063 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Asteroma_sp_CCL060.BC88-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:32,595 Reduced DataFrame memory usage from 0.033599853515625Mb to 0.033599853515625Mb
+2024-04-15 17:23:32,596 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:32,596 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Yamadazyma_mexicana.BC80-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:32,809 Reduced DataFrame memory usage from 0.0822296142578125Mb to 0.0822296142578125Mb
+2024-04-15 17:23:32,810 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:32,810 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Candid_zeylanoides.BC57-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:33,896 Reduced DataFrame memory usage from 0.0851898193359375Mb to 0.0851898193359375Mb
+2024-04-15 17:23:33,897 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:33,897 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Scedosporium_boydii.BC76-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:34,361 Reduced DataFrame memory usage from 0.0335845947265625Mb to 0.0335845947265625Mb
+2024-04-15 17:23:34,362 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:34,362 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Candida_caryicola.BC49-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:34,438 Reduced DataFrame memory usage from 0.1024017333984375Mb to 0.1024017333984375Mb
+2024-04-15 17:23:34,439 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:34,439 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Kluyveromyces_marxianus.BC67-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:35,433 Reduced DataFrame memory usage from 0.0775604248046875Mb to 0.0775604248046875Mb
+2024-04-15 17:23:35,434 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:35,434 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Candida_albicans.BC47-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:36,000 Reduced DataFrame memory usage from 0.102325439453125Mb to 0.102325439453125Mb
+2024-04-15 17:23:36,001 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:36,001 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Botrytis_cinerea.BC31-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:36,229 Reduced DataFrame memory usage from 0.05438232421875Mb to 0.05438232421875Mb
+2024-04-15 17:23:36,230 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:36,230 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Erysiphe_necator.BC35-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:36,805 Reduced DataFrame memory usage from 0.0522918701171875Mb to 0.0522918701171875Mb
+2024-04-15 17:23:36,806 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:36,806 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Candida_tropicalis.BC56-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:37,064 Reduced DataFrame memory usage from 0.0738983154296875Mb to 0.0738983154296875Mb
+2024-04-15 17:23:37,065 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:37,065 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_flavum.BC42-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:37,609 Reduced DataFrame memory usage from 0.0737457275390625Mb to 0.0737457275390625Mb
+2024-04-15 17:23:37,609 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:37,609 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Scedosporium_auranticum.BC75-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:38,076 Reduced DataFrame memory usage from 0.08636474609375Mb to 0.08636474609375Mb
+2024-04-15 17:23:38,077 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:38,077 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Cortinarius_globuliformis_CM4.BC86-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:38,086 Reduced DataFrame memory usage from 0.03375244140625Mb to 0.03375244140625Mb
+2024-04-15 17:23:38,086 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:38,086 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Candida_glabrata.BC52-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:39,180 Reduced DataFrame memory usage from 0.07196044921875Mb to 0.07196044921875Mb
+2024-04-15 17:23:39,181 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:39,181 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Yamadazyma_scolyti.BC81-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:39,503 Reduced DataFrame memory usage from 0.1084136962890625Mb to 0.1084136962890625Mb
+2024-04-15 17:23:39,504 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:39,504 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Cryptovalsa_ampelina.BC38-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:40,002 Reduced DataFrame memory usage from 0.035308837890625Mb to 0.035308837890625Mb
+2024-04-15 17:23:40,003 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:40,003 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Fusarium_pseudograminearum.BC41-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:40,366 Reduced DataFrame memory usage from 0.071563720703125Mb to 0.071563720703125Mb
+2024-04-15 17:23:40,367 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:40,367 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Quambalaria_cyanescens_CCL055.BC84-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:40,541 Reduced DataFrame memory usage from 0.0370635986328125Mb to 0.0370635986328125Mb
+2024-04-15 17:23:40,541 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:40,541 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Puccinia_striiformis_var_tritici.BC25-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:41,684 Reduced DataFrame memory usage from 0.088348388671875Mb to 0.088348388671875Mb
+2024-04-15 17:23:41,685 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:41,686 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Nakazawaea_ernobil.BC70-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:41,928 Reduced DataFrame memory usage from 0.08905029296875Mb to 0.08905029296875Mb
+2024-04-15 17:23:41,928 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:41,928 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Aspergillus_niger.BC44-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:43,362 Reduced DataFrame memory usage from 0.3003692626953125Mb to 0.3003692626953125Mb
+2024-04-15 17:23:43,363 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:43,363 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Geotrichum_candidum.BC65-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:43,621 Reduced DataFrame memory usage from 0.1405181884765625Mb to 0.1405181884765625Mb
+2024-04-15 17:23:43,622 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:43,622 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Trichosporon_asahil.BC78-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:44,820 Reduced DataFrame memory usage from 0.0830535888671875Mb to 0.0830535888671875Mb
+2024-04-15 17:23:44,820 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:44,820 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Yarrowia_lipolytica.BC82-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:45,912 Reduced DataFrame memory usage from 0.0817108154296875Mb to 0.0817108154296875Mb
+2024-04-15 17:23:45,913 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:45,913 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Candida_dublinsiensis.BC51-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:46,089 Reduced DataFrame memory usage from 0.2059173583984375Mb to 0.2059173583984375Mb
+2024-04-15 17:23:46,090 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:46,090 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Wickerhamomyces_anomalus.BC79-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:47,221 Reduced DataFrame memory usage from 0.08984375Mb to 0.08984375Mb
+2024-04-15 17:23:47,222 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:47,236 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Candida_catenulata.BC50-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:47,335 Reduced DataFrame memory usage from 0.0843963623046875Mb to 0.0843963623046875Mb
+2024-04-15 17:23:47,336 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:47,336 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Candida_parapsilosis.BC55-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:48,539 Reduced DataFrame memory usage from 0.083038330078125Mb to 0.083038330078125Mb
+2024-04-15 17:23:48,539 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:48,540 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Penicillium_chrysogenum.BC71-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:48,631 Reduced DataFrame memory usage from 0.107696533203125Mb to 0.107696533203125Mb
+2024-04-15 17:23:48,632 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:48,632 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Fusarium_proliferatum.BC63-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:49,042 Reduced DataFrame memory usage from 0.041900634765625Mb to 0.041900634765625Mb
+2024-04-15 17:23:49,043 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:49,044 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Blastobotrys_proliferans.BC46-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:49,357 Reduced DataFrame memory usage from 0.113555908203125Mb to 0.113555908203125Mb
+2024-04-15 17:23:49,358 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:49,358 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Rhodotorula_mucilaginosa.BC74-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:50,333 Reduced DataFrame memory usage from 0.08551025390625Mb to 0.08551025390625Mb
+2024-04-15 17:23:50,333 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:50,333 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Kluyveromyces_lactis.BC66-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:50,769 Reduced DataFrame memory usage from 0.092681884765625Mb to 0.092681884765625Mb
+2024-04-15 17:23:50,770 Nanoget: Starting to collect statistics from plain fastq file.
+2024-04-15 17:23:50,770 Nanoget: Decompressing gzipped fastq 20221208.Rep1_Run2_ITS_Fungal_database.Tuber_brumale.BC89-trim-primer.filtered.fastq.gz
+2024-04-15 17:23:51,858 Reduced DataFrame memory usage from 0.1048126220703125Mb to 0.1048126220703125Mb
+2024-04-15 17:23:53,888 Reduced DataFrame memory usage from 0.3209686279296875Mb to 0.3209686279296875Mb
+2024-04-15 17:23:53,912 Nanoget: Gathered all metrics of 324237 reads
+2024-04-15 17:23:54,102 Calculated statistics
+2024-04-15 17:23:54,103 Using sequenced read lengths for plotting.
+2024-04-15 17:23:54,117 NanoPlot:  Valid color #4CB391.
+2024-04-15 17:23:54,117 NanoPlot:  Valid colormap Greens.
+2024-04-15 17:23:54,127 NanoPlot:  Creating length plots for Read length.
+2024-04-15 17:23:54,128 NanoPlot:  Using 324237 reads maximum of 5644bp.
+2024-04-15 17:23:55,896 Saved ./WeightedHistogramReadlength  as png (or png for --legacy)
+2024-04-15 17:23:56,517 Saved ./WeightedLogTransformed_HistogramReadlength  as png (or png for --legacy)
+2024-04-15 17:23:57,117 Saved ./Non_weightedHistogramReadlength  as png (or png for --legacy)
+2024-04-15 17:23:57,747 Saved ./Non_weightedLogTransformed_HistogramReadlength  as png (or png for --legacy)
+2024-04-15 17:23:59,356 Saved ./Yield_By_Length  as png (or png for --legacy)
+2024-04-15 17:23:59,357 Created length plots
+2024-04-15 17:23:59,359 NanoPlot: Creating Read lengths vs Average read quality plots using 324237 reads.
+2024-04-15 17:24:00,690 Saved ./LengthvsQualityScatterPlot_dot  as png (or png for --legacy)
+2024-04-15 17:24:03,077 Saved ./LengthvsQualityScatterPlot_kde  as png (or png for --legacy)
+2024-04-15 17:24:03,077 Created LengthvsQual plot
+2024-04-15 17:24:03,078 Writing html report.
+2024-04-15 17:24:03,087 Finished!
