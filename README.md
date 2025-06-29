@@ -12,4 +12,4 @@ There are eight directories:
 7. Mock3_CandidaDiagnostics: Script and input files for diagnostic simulation using *Candida tropicalis*. Written by A. Graetz. 
 8. AlphaDiversity_BhattacharyyaDistance: Script and input files for community diversity analyses. Written by A. Graetz. 
 
-While input files are provided, raw data can be accessed from Zenodo: 10.5281/zenodo.15751794
+While some input files are provided, raw data can be accessed from Zenodo: 10.5281/zenodo.15751794
