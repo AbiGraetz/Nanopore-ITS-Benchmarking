@@ -33,7 +33,7 @@ for (i in seq_along(GSD_list)) {
   GT[[i]] <- read.csv(GSD_list[[i]], header = TRUE)
   GT[[i]] <- dplyr::select(GT[[i]], c("organism", "sequence_abundance"))
 }
-names(GT) <- c("Mock1_GT", "Mock2_GT", "Mock3_GT")
+names(GT) <- c("Mock1_GT", "Mock2_GT")
 
 K2_list <- list()
 K2_list[["Mock1_GSD_kraken2_Qmin15"]] <- M1_GSD[["Mock1_GSD_kraken2_Qmin15"]]
